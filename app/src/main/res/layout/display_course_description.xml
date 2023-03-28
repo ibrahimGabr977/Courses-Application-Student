@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/z_test_history_image"
+    android:layoutDirection="ltr">
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="#D9232733"/>
+
+
+    <ImageView
+        android:id="@+id/display_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:contentDescription="@string/content_description_back"
+        android:focusable="true"
+        android:src="@drawable/nav_profile_backd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.065"
+        android:layout_marginTop="7dp"/>
+
+
+    <ImageView
+        android:id="@+id/tutor_image"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/c_main_holder_teacher_imagebg"
+        android:contentDescription="@string/teacher_image"
+        android:padding="1dp"
+        android:src="@drawable/z_test_teacher_image1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.935"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/display_back"
+        app:layout_constraintVertical_bias="0" />
+
+
+    <TextView
+        android:id="@+id/display_line"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="11dp"
+        android:background="@color/white_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/tutor_image"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tutor_image"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintWidth_percent="0.21" />
+
+    <TextView
+        android:id="@+id/lesson_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="end"
+        android:lineSpacingExtra="5dp"
+        android:maxLines="2"
+        android:text="@string/display_course_title_test"
+        android:textColor="@color/white_color"
+        android:textDirection="ltr"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/display_line"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/display_line"
+        app:layout_constraintVertical_bias="0" />
+
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/d_display_course_categorybg"
+        android:drawablePadding="7dp"
+        android:paddingHorizontal="13dp"
+        android:paddingVertical="5dp"
+        android:text="@string/category_test"
+        android:textColor="@color/white_color"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:drawableStartCompat="@drawable/c_main_course_holder_categoryd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/display_back"
+        app:layout_constraintTop_toBottomOf="@id/lesson_title"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="17dp"/>
+
+
+    <TextView
+        android:id="@+id/tutor_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/teacher_name_test"
+        android:textColor="@color/white_color"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/category"
+        app:layout_constraintEnd_toEndOf="@id/lesson_title"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="@id/display_back"
+        app:layout_constraintTop_toTopOf="@id/category"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.hope.igb.aic_student.screens.mainscreen.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_display_clicked_course"
+            app:destination="@id/displayCourseFragment" />
+        <action
+            android:id="@+id/action_display_certain_category_courses"
+            app:destination="@id/displayAllCoursesFragment" />
+        <action
+            android:id="@+id/action_start_studying_course"
+            app:destination="@id/studyCourseFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/displayAllCoursesFragment"
+        android:name="com.hope.igb.aic_student.screens.displayallcourses.DisplayAllCoursesFragment"
+        android:label="DisplayAllCoursesFragment" >
+        <action
+            android:id="@+id/action_display_clicked_course"
+            app:destination="@id/displayCourseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/displayCourseFragment"
+        android:name="com.hope.igb.aic_student.screens.displaycourse.DisplayCourseFragment"
+        android:label="CourseContentsFragment" >
+        <action
+            android:id="@+id/action_buy_course"
+            app:destination="@id/paymentFragment" />
+        <action
+            android:id="@+id/action_start_studying_course"
+            app:destination="@id/studyCourseFragment" >
+            <argument
+                android:name="startLessonPosition"
+                android:defaultValue="0" />
+            <argument
+                android:name="wasBought"
+                android:defaultValue="false" />
+        </action>
+        <action
+            android:id="@+id/action_displayCourseFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.hope.igb.aic_student.screens.payment.PaymentFragment"
+        android:label="PaymentFragment" >
+        <action
+            android:id="@+id/action_start_studying_course"
+            app:destination="@id/studyCourseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studyCourseFragment"
+        android:name="com.hope.igb.aic_student.screens.coursestudying.StudyCourseFragment"
+        android:label="StudyCourseFragment" >
+        <argument
+            android:name="startLessonPosition"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="isBought"
+            app:argType="boolean"
+            android:defaultValue="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.hope.igb.aic_student.screens.login.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_displayCourseFragment"
+            app:destination="@id/displayCourseFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.welcome.WelcomeActivity"
+    android:background="@color/white_color"
+    android:layoutDirection="ltr"
+    android:textDirection="ltr"
+    tools:viewBindingIgnore="true">
+
+
+    <TextView
+        android:id="@+id/welcome_skip_text_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/welcomeViewPager"
+        app:layout_constraintEnd_toEndOf="@id/welcomeViewPager"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/blue_color"
+        android:text="@string/skip"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="7dp"
+        app:layout_constraintVertical_bias="0.035"
+        app:layout_constraintHorizontal_bias="1"/>
+
+    <com.hope.igb.aic_student.common.customviewpager.NonSwipedViewPager
+        android:id="@+id/welcomeViewPager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcome_skip_text_btn"
+        app:layout_constraintBottom_toTopOf="@id/pages_indicators_container"
+        app:layout_constraintWidth_percent="0.9"
+        />
+
+
+
+
+
+    <TextView
+        android:id="@+id/welcome_next_text_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/welcome_skip_text_btn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/black_color"
+        android:text="@string/next"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="7dp"
+        app:layout_constraintVertical_bias="0.965"
+        app:layout_constraintHorizontal_bias="1"
+        android:gravity="center"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/pages_indicators_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/welcome_next_text_btn"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintVertical_bias="1"
+        android:layout_marginBottom="3dp">
+
+
+        <ImageView
+            android:id="@+id/welcome_indicator_page1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/a_welcome_selected_page_circled"
+            android:importantForAccessibility="no"
+            android:layout_marginEnd="7dp"/>
+
+        <ImageView
+            android:id="@+id/welcome_indicator_page2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/a_welcome_unselected_page_circled"
+            android:importantForAccessibility="no"
+            android:layout_marginEnd="7dp"/>
+
+        <ImageView
+            android:id="@+id/welcome_indicator_page3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/a_welcome_unselected_page_circled"
+            android:importantForAccessibility="no"
+            android:layout_marginEnd="7dp"/>
+
+        <ImageView
+            android:id="@+id/welcome_indicator_page4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/a_welcome_unselected_page_circled"
+            android:importantForAccessibility="no"
+            android:layout_marginEnd="7dp"/>
+
+        <ImageView
+            android:id="@+id/welcome_indicator_page5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/a_welcome_unselected_page_circled"
+            android:importantForAccessibility="no"/>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

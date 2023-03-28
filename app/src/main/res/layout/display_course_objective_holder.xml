@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white_color"
+    tools:viewBindingIgnore="true"
+    android:paddingVertical="7dp">
+
+
+    <TextView
+        android:id="@+id/course_objective"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        tools:viewBindingIgnore="true"
+        android:textSize="15sp"
+        android:textColor="@color/black_color"
+        android:text="@string/course_objective_test1"
+        android:drawablePadding="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/image1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="9dp"/>
+
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/course_objective"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/d_display_course_objectived"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintHorizontal_bias="1"
+        android:importantForAccessibility="no" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

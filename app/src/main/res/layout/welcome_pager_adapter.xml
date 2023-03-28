@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white_color"
+    tools:viewBindingIgnore="true">
+
+
+    <ImageView
+        android:id="@+id/welcome_adapter_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintVertical_bias="0.1"
+        android:src="@drawable/a_welcome_page1_image"
+        />
+
+    <TextView
+        android:id="@+id/welcome_adapter_title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcome_adapter_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/black_color"
+        android:textStyle="bold"
+        android:textSize="19sp"
+        android:text="@string/welcome_page1_title"
+        android:gravity="center"
+        app:layout_constraintVertical_bias="0"
+        android:layout_marginTop="11dp"
+        android:textDirection="rtl"/>
+
+
+    <TextView
+        android:id="@+id/welcome_adapter_content_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/welcome_adapter_image"
+        app:layout_constraintEnd_toEndOf="@id/welcome_adapter_image"
+        app:layout_constraintTop_toBottomOf="@id/welcome_adapter_title_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/black_color"
+        android:textSize="17sp"
+        android:text="@string/welcome_page1_content"
+        android:gravity="center"
+        app:layout_constraintVertical_bias="0"
+        android:layout_marginTop="15dp"
+        android:paddingHorizontal="23dp"
+        android:justificationMode="inter_word"
+        tools:targetApi="o" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

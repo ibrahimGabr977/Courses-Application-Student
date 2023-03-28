@@ -1,0 +1,194 @@
+<resources>
+    <string name="app_name">AIC-Course</string>
+
+    <!--welcome screen texts-->
+    <string name="next">التالي</string>
+    <string name="welcome_page1_title">مرحباٌ بك معنا!!</string>
+    <string name="welcome_page1_content">نحن سعداء لأنك قررت تجربة منصتنا. وفي ما يلي تعريف سريع ومبسط بمنصتنا ومميزاتها.</string>
+    <string name="welcome_page2_title">منصة AIC!!</string>
+    <string name="welcome_page2_content">تمكنك من الوصول لكورسات مختلفة في مجالات كثيرة بجودة عالية وجميعها باللغة العربية.</string>
+    <string name="welcome_page3_title">خيارات متعددة للدراسة!!</string>
+    <string name="welcome_page3_content">يمكنك مشاهدة الكورس كفيديو أو تشغيله صوتيا في الخلفية وغيرها من الميزات.</string>
+    <string name="welcome_page4_title">مسابقات وتخفيضات!!</string>
+    <string name="welcome_page4_content">تمنحك منصتنا تخفيضات تصل ل100% على الكورسات بناء على إجتهادك.</string>
+    <string name="welcome_page5_title">إبدأ الآن!!</string>
+    <string name="welcome_page5_content">نحن سعداء بتلقي إقتراحاتك عبر موقعنا. إبدأ تصفح الكورسات الآن.</string>
+    <string name="skip">تخطي</string>
+    <string name="get_started">إبدأ</string>
+
+
+    <!--login screen-->
+    <string name="enter_email">الإيميل</string>
+    <string name="register">إنشاء حساب</string>
+    <string name="sign_in">تسجيل الدخول</string>
+    <string name="sign_in_facebook">تسجيل بإستخدام الفيسبوك</string>
+    <string name="sign_in_google">تسجيل بإستخدام جوجل</string>
+    <string name="enter_password">كلمة المرور</string>
+    <string name="or">أو</string>
+    <string name="forgot_password">نسيت كلمة المرور</string>
+    <string name="dont_have_account">ليس لديك حساب؟</string>
+    <string name="create_account">إنشاء حساب</string>
+
+    <string name="have_account">لديك حساب؟</string>
+
+
+
+    <!--navigation drawer-->
+    <string name="profile_name_test">أحمد محمد</string>
+    <string name="search_key_test">#rank_7540</string>
+    <string name="nav_item_profile">حسابي</string>
+    <string name="nav_item_tournaments">المسابقات</string>
+    <string name="nav_group_payments">قسم المالية</string>
+    <string name="nav_item_payment">أموالي</string>
+    <string name="nav_item_complaints">الشكاوي</string>
+    <string name="nav_group_help">أقسام أخري</string>
+    <string name="nav_item_help">المساعدة</string>
+    <string name="nav_item_suggestions">الإقتراحات</string>
+    <string name="nav_item_settings">الإعدادات</string>
+    <string name="nav_item_review">ادعمنا</string>
+    <string name="content_description_profile_image">Profile image</string>
+
+
+    <!--main fragment texts-->
+    <string name="welcome">مرحباٌ بك</string>
+    <string name="main_menu">القائمة الرئيسية</string>
+    <string name="search">بحث</string>
+    <string name="courses">كورسات</string>
+    <string name="subscriptions">إشتراكاتي</string>
+    <string name="favorite">المفضلة</string>
+    <string name="my_account">التصنيف</string>
+
+
+
+    <!--main courses fragment texts-->
+    <string name="teacher_image">الصورة الشخصية للمعلم</string>
+    <string name="see_all">عرض الكل</string>
+    <string name="all_courses">كل الكورسات</string>
+
+
+    <!--main favorite fragment texts-->
+    <string name="unsubscribe">إزالة</string>
+
+
+
+    <!--main my_account fragment texts-->
+    <string name="rank_student_image">صورة الطالب في التصنيف</string>
+    <string name="winners_title">الفائزون هذا الشهر:</string>
+    <string name="ranks_title">التصنيف الحالي:</string>
+
+
+
+    <!--main favorite texts-->
+    <string name="current_balance">الرصيد الحالي</string>
+
+
+    <!--tested texts-->
+    <string name="teacher_name_test">محمد عبد المعبود</string>
+    <string name="course_title_test">برمجة الأندرويد بالكوتلن من المبتدئ للمحترف</string>
+    <string name="course_price_test">150 جنيه</string>
+    <string name="discount_price_test">654 جنيه</string>
+    <string name="course_level_test">مبتدئ</string>
+    <string name="course_lessons_count_test">35درس</string>
+    <string name="course_academic_year_test">3ثانوي</string>
+    <string name="course_type_test">لغات</string>
+    <string name="favorite_title_test">شرح مادة الفيزياء: 3ثانوي عام</string>
+    <string name="favorite_next_video_test">الدرس الثالث: الموجات الصوتية</string>
+
+
+
+    <!--profile texts-->
+    <string name="profile_name">الإسم</string>
+    <string name="profile_email">الإيميل</string>
+    <string name="profile_password">كلمة المرور</string>
+    <string name="profile_phone">رقم الهاتف</string>
+    <string name="profile_bio">الجملة التعريفية</string>
+    <string name="profile_education_category">الفئة التعليمية</string>
+    <string name="content_description_back">العودة للخلف</string>
+    <string name="profile">الصفحة الشخصية</string>
+    <string name="profile_save_changes">حفظ</string>
+    <string name="profile_my_rank">التصنيف</string>
+    <string name="profile_personal_info">المعلومات الشخصية:</string>
+    <string name="profile_account_info">معلومات الحساب:</string>
+    <string name="content_description_change_profile_picture">تغيير الصورة الشخصية</string>
+    <string name="profile_logout">تسجيل الخروج</string>
+    <string name="profile_academic_year">السنة الدراسية</string>
+
+
+
+
+
+
+
+
+    <string name="statistic_hour_points_test1">3 ساعة</string>
+    <string name="statistic_value_test1">10.01 جنيه</string>
+    <string name="statistic_date_test1">اليوم حتى الان</string>
+    <string name="statistic_hour_points_test2">13 ساعة</string>
+    <string name="statistic_value_test2">45.32 جنيه</string>
+    <string name="statistic_date_test2">هذا الأسبوع</string>
+    <string name="statistic_hour_points_test3">33 ساعة</string>
+    <string name="statistic_value_test3">110.55 جنيه</string>
+    <string name="statistic_date_test3">هذا الشهر</string>
+
+    <string name="statistic_hour_points_test4">77 ساعة</string>
+    <string name="statistic_value_test4">257.51 جنيه</string>
+    <string name="statistic_date_test4">الشهر السابق</string>
+
+    <string name="statistic_hour_points_test5">255 ساعة</string>
+    <string name="statistic_value_test5">850 جنيه</string>
+    <string name="statistic_date_test5">كل الوقت</string>
+
+
+    <string name="display_course_title_test">برمجة تطبيقات اندرويد بالكوتلن</string>
+    <string name="category_test">برمجة</string>
+
+    <string name="course_description_test">تعلم برمجة تطبيقات الأندرويد بلغة الكوتلن من الصفر وحتى الإحتراف -- الكورس موضح بتطبيقات اندرويد عملية.</string>
+    <string name="students_count_test">23545 طالب مسجل.</string>
+    <string name="buy_now">شراء الآن</string>
+    <string name="add_favorite">إضافة للمفضلة</string>
+    <string name="what_you_will_learn">ماذا سوف تتعلم؟</string>
+
+    <string name="course_lessons">محاضرات الكورس</string>
+    <string name="course_features">مكونات الكورس</string>
+    <string name="course_hours_test">19.5 ساعة فيديو</string>
+    <string name="course_attachments_test">25 مقالة مرفقة</string>
+    <string name="course_certificate_test">شهادة معتمدة من المعلم ومن المنصة.</string>
+    <string name="course_requirements">متطلبات الكورس</string>
+    <string name="course_requirements_test">معرفة بسيطة بأساسيات البرمجة مع الإهتمام بمجال برمجة التطبيقات وخصوصا بالأندرويد.</string>
+
+
+
+
+    <string name="course_objective_test1">أساسيات الكوتلن بالكامل المطلوبة في برمجة التطبيقات (المتغيرات, الدوال, الكلاسات, الانترفيسيس....).</string>
+    <string name="course_objective_test2">الأندرويد ستوديو وكيف تقوم بإعداد بيئة للعمل بالتفصيل.</string>
+    <string name="course_objective_test3">الاكتفتي والفراجمنت وكيف تربط بين الxml والأكواد, كيف تقوم بعمل button لعرض رسالة.</string>
+    <string name="course_objective_test4">الRecyclerView وكيف تقوم بإعداده, الViewPager, الcontainers ونظرة عن كثب على أهمها.</string>
+
+
+    <string name="lesson_title_test1">التعريف بالكورس</string>
+    <string name="lesson_duration_test1">00:15 ساعة</string>
+
+    <string name="lesson_title_test2">الدرس الأول: أساسيات الكوتلن</string>
+    <string name="lesson_duration_test2">02:16 ساعة</string>
+
+    <string name="lesson_title_test3">الدرس الثاني: الأندرويد ستوديو</string>
+    <string name="lesson_duration_test3">01:10 ساعة</string>
+
+
+    <string name="lesson_title_test4">الدرس الثالث: الاكتفتي والxml</string>
+    <string name="lesson_duration_test4">01:47 ساعة</string>
+
+
+    <string name="lesson_title_test5">الدرس الرابع: أهم الViews</string>
+    <string name="lesson_duration_test5">02:45 ساعة</string>
+
+
+
+    <string name="lesson_url_test1">https://drive.google.com/uc?export=download&amp;id=1xcdDy_KUn0b1bSW6LRl7iZxnvG82-aCF</string>
+    <string name="lesson_url_test2">https://drive.google.com/uc?export=download&amp;id=1MKCEoHI-hDxNUC21iw9QUUv3wk7Tdz6e</string>
+    <string name="lesson_url_test3">https://drive.google.com/uc?export=download&amp;id=18om5jj6zjs56q0XJ04P5UcLEmUaaOVL0</string>
+    <string name="lesson_url_test4">https://drive.google.com/uc?export=download&amp;id=1FTe_VtTR86UKpxSd6AQdA1WsdTIzfNpl</string>
+    <string name="lesson_url_test5">https://drive.google.com/uc?export=download&amp;id=1W8D8Qn3Rctq8FaINkqbFR-oA9vQOFF0x</string>
+    <string name="invalid_login">من فضلك أدخل معلومات صحيحة لتسجيل الدخول</string>
+
+</resources>

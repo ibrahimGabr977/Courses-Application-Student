@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ElMalzama" parent="Theme.AppCompat.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/black_color</item>
+        <item name="colorPrimaryVariant">@color/black_color</item>
+        <item name="colorOnPrimary">@color/white_color</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
+
+<!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+<!--        <item name="android:windowTranslucentStatus">true</item>-->
+<!--        <item name="android:windowTranslucentNavigation">true</item>-->
+
+        <!--changing nav drawer separator color-->
+        <item name="android:listDivider">@color/list_divider_color</item>
+        <!--changing nav drawer sub category title color-->
+        <item name="android:textColorSecondary">@color/gray_color</item>
+    </style>
+
+    <style name="MineCustomTabText" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+
+    <style name="CustomNavTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">casual</item>
+        <item name="android:letterSpacing">0.17</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+</resources>

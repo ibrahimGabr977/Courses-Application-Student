@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layoutDirection="ltr"
+    android:layout_marginBottom="11dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?android:attr/selectableItemBackground"
+    tools:viewBindingIgnore="true">
+
+
+    <ImageView
+        android:id="@+id/lesson_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintWidth_percent="0.11"
+        android:src="@drawable/z_lesson_image1"
+        android:layout_marginBottom="11dp"
+        android:scaleType="fitXY"
+        android:background="@drawable/b_login_googlebg"
+        android:importantForAccessibility="no"
+        app:layout_constraintHorizontal_bias="1"/>
+
+
+    <TextView
+        android:id="@+id/lesson_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/lesson_image"
+        app:layout_constraintTop_toTopOf="@id/play_lesson"
+        app:layout_constraintBottom_toTopOf="@id/lesson_duration"
+        android:textSize="15sp"
+        android:textColor="@color/black_color"
+        android:text="@string/lesson_title_test1"
+        app:layout_constraintHorizontal_bias="1"
+        android:layout_marginEnd="15dp"/>
+
+    <TextView
+        android:id="@+id/lesson_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/lesson_title"
+        app:layout_constraintTop_toBottomOf="@id/lesson_title"
+        app:layout_constraintBottom_toBottomOf="@id/play_lesson"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:textColor="@color/gray_color"
+        android:text="@string/lesson_duration_test1"
+        app:layout_constraintHorizontal_bias="1"/>
+
+
+    <TextView
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lesson_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="#8C8A8B85"
+        app:layout_constraintVertical_bias="0"
+        android:layout_marginTop="11dp"
+        />
+
+    <ImageView
+        android:id="@+id/play_lesson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/lesson_image"
+        app:layout_constraintBottom_toBottomOf="@id/lesson_image"
+        android:src="@drawable/d_display_course_unable_to_play_lessond"
+        android:contentDescription="@string/content_description_profile_image"
+        app:layout_constraintHorizontal_bias="0"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="5dp"
+        android:background="@drawable/z_black_stroke_circlebg"
+
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

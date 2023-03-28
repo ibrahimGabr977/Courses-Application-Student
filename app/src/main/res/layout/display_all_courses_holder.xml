@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="5dp"
+    android:layout_marginBottom="11dp"
+    android:layoutDirection="ltr"
+    android:textDirection="ltr"
+    app:cardBackgroundColor="@color/white_color"
+    app:cardCornerRadius="9dp"
+    tools:viewBindingIgnore="true"
+    app:cardElevation="9dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?android:attr/selectableItemBackground">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/display_holder_teacher_image"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="13dp"
+            android:src="@drawable/z_test_teacher_image1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.93"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintWidth_percent="0.12"
+            android:contentDescription="@string/teacher_image"/>
+
+
+        <TextView
+            android:id="@+id/display_holder_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:gravity="end"
+            android:maxLines="2"
+            android:text="@string/course_title_test"
+            android:textColor="@color/black_color"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:lines="1"
+            android:layout_marginEnd="11dp"
+            android:layout_marginStart="11dp"
+            app:layout_constraintBottom_toTopOf="@id/display_holder_tutor_name"
+            app:layout_constraintEnd_toStartOf="@id/display_holder_teacher_image"
+            app:layout_constraintStart_toEndOf="@id/display_holder_lessons_count"
+            app:layout_constraintTop_toTopOf="@id/display_holder_teacher_image"
+            app:layout_constraintVertical_bias="0"
+            android:ellipsize="end"
+            />
+
+        <TextView
+            android:id="@+id/display_holder_tutor_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/teacher_name_test"
+            android:textColor="@color/gray_color"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/display_holder_teacher_image"
+            app:layout_constraintEnd_toEndOf="@id/display_holder_title"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/display_holder_title" />
+
+
+        <TextView
+            android:id="@+id/display_holder_lessons_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:drawablePadding="5dp"
+            android:text="@string/course_lessons_count_test"
+            android:textColor="@color/blue_color"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:drawableEndCompat="@drawable/c_main_course_holder_lesson_countd"
+            app:layout_constraintBottom_toBottomOf="@id/display_holder_teacher_image"
+            app:layout_constraintEnd_toStartOf="@id/display_holder_title"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="@id/display_holder_category_text"
+            app:layout_constraintTop_toTopOf="@id/display_holder_teacher_image"
+            app:layout_constraintVertical_bias="0.3" />
+
+
+
+        <TextView
+            android:id="@+id/display_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/gray_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/display_holder_tutor_name"
+            app:layout_constraintVertical_bias="0" />
+
+        <TextView
+            android:id="@+id/display_holder_academic_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="13dp"
+            android:drawablePadding="7dp"
+            android:text="@string/course_academic_year_test"
+            android:textColor="@color/gray_color"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:drawableEndCompat="@drawable/c_main_course_holder_academic_yeard"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/display_holder_teacher_image"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/display_line"
+            app:layout_constraintVertical_bias="0" />
+
+
+        <TextView
+            android:id="@+id/display_holder_category_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="3dp"
+            android:text="@string/course_type_test"
+            android:textColor="@color/black_color"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:drawableStartCompat="@drawable/c_main_course_holder_categoryd"
+            app:layout_constraintBottom_toBottomOf="@id/display_holder_academic_year"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.07"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/display_holder_academic_year" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

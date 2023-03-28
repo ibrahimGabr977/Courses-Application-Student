@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+    <group android:id="@+id/nav_group_about_me"
+        android:checkableBehavior="single">
+
+
+
+        <item android:id="@+id/nav_item_profile"
+            android:icon="@drawable/nav_item_profiled"
+            android:title="@string/nav_item_profile"/>
+
+        <item android:id="@+id/nav_item_tournaments"
+            android:icon="@drawable/nav_item_tournamentsd"
+            android:title="@string/nav_item_tournaments"
+            />
+    </group>
+
+
+    <item android:title="@string/nav_group_payments">
+        <menu>
+            <group android:id="@+id/nav_group_payments">
+
+                <item android:id="@+id/nav_item_payments"
+                    android:icon="@drawable/nav_item_paymentsd"
+                    android:title="@string/nav_item_payment"/>
+
+
+                <item android:id="@+id/nav_item_complaints"
+                    android:icon="@drawable/nav_item_complaintsd"
+                    android:title="@string/nav_item_complaints"/>
+
+            </group>
+        </menu>
+    </item>
+
+
+
+
+
+
+
+    <item android:title="@string/nav_group_help">
+        <menu>
+            <item android:id="@+id/nav_item_review_us"
+                android:icon="@drawable/nav_item_reviewusd"
+                android:title="@string/nav_item_review"/>
+
+            <item android:id="@+id/nav_item_help"
+                android:icon="@drawable/nav_item_helpd"
+                android:title="@string/nav_item_help"/>
+
+            <item android:id="@+id/nav_item_suggestions"
+                android:icon="@drawable/nav_item_suggestionsd"
+                android:title="@string/nav_item_suggestions"/>
+
+
+            <item android:id="@+id/nav_item_settings"
+                android:icon="@drawable/nav_item_settingsd"
+                android:title="@string/nav_item_settings"/>
+        </menu>
+    </item>
+
+
+
+
+
+
+</menu>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_color"
+    android:clickable="true"
+    android:focusable="true"
+    android:layoutDirection="ltr"
+    android:textDirection="ltr">
+
+
+    <View
+        android:id="@+id/clickable_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/items_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="@color/blue_color"
+        android:textDirection="rtl"
+        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintVertical_bias="0"
+        android:paddingVertical="15dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/rank_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:drawableEndCompat="@drawable/c_main_rank_first_winnerd"
+        app:layout_constraintBottom_toBottomOf="@id/student_image"
+        app:layout_constraintEnd_toEndOf="@id/items_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/student_image"
+        app:layout_constraintHorizontal_bias="1"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:textColor="@color/black_color"
+        android:drawablePadding="5dp"/>
+
+
+    <ImageView
+        android:id="@+id/student_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="15dp"
+        android:contentDescription="@string/rank_student_image"
+        android:src="@drawable/z_test_teacher_image1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@id/rank_text"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/items_title"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintWidth_percent="0.12" />
+
+
+    <TextView
+        android:id="@+id/student_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="11dp"
+        android:gravity="end"
+        android:maxLines="2"
+        android:textColor="@color/black_color"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/student_category"
+        app:layout_constraintEnd_toStartOf="@id/student_image"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/student_image"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/student_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/gray_color"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/student_image"
+        app:layout_constraintEnd_toEndOf="@id/student_name"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/student_name" />
+
+
+    <TextView
+        android:id="@+id/item_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="7dp"
+        android:fontFamily="cursive"
+        android:textColor="@color/black_color"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:drawableStartCompat="@drawable/c_main_rank_hoursd"
+        app:layout_constraintBottom_toBottomOf="@id/student_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/student_image" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
